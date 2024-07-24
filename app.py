@@ -181,7 +181,7 @@ def generate_interview_questions(jd, cv, categories):
     return response.choices[0].message.content.strip()
 
 def main():
-    st.set_page_config(page_title="SmartInterview AI", page_icon="🤖")
+    st.set_page_config(page_title="SmartInterview AI", page_icon="🚀")
     st.title("SmartInterview AI")
     st.write("""
         🚀 Welcome to SmartInterview AI 🚀
@@ -206,16 +206,18 @@ def main():
             default=["Technical Skills", "Business Acumen", "Cultural Fit", "Problem-Solving", "Career Goals", "Teamwork", "Conflict Management", "CV Anomalies"]
         )
 
-    if jd_file is not None and cv_file is not None:
-        jd = read_file(jd_file)
-        cv = read_file(cv_file)
+    if st.button("Generate Interview Questions"):
+        if jd_file is None or cv_file is None:
+            st.warning("Missing files. Please ensure both the Job Description and Candidate CV files are uploaded.")
+        else:
+            jd = read_file(jd_file)
+            cv = read_file(cv_file)
 
-        jd_requirements = extract_requirements(jd)
-        cv_analysis = analyze_text(cv)
+            jd_requirements = extract_requirements(jd)
+            cv_analysis = analyze_text(cv)
 
-        suitability_score = evaluate_candidate_fit(jd_requirements, cv_analysis)
+            suitability_score = evaluate_candidate_fit(jd_requirements, cv_analysis)
 
-        if st.button("Generate Interview Questions"):
             with st.spinner('Generating questions...'):
                 progress_bar = st.progress(0)
 
@@ -224,12 +226,14 @@ def main():
                     progress_bar.progress(percent_complete + 1)
 
                 questions = generate_interview_questions(jd, cv, categories)
+            
             st.subheader("Generated Interview Questions:")
             st.write(questions)
             st.download_button(label="Download Questions as TXT", data=questions, file_name="interview_questions.txt", mime="text/plain")
 
             st.subheader('Candidate Suitability Assessment:')
             st.write(suitability_score)
+
 
 if __name__ == "__main__":
     main()
