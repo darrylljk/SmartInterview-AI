@@ -5,6 +5,9 @@ import fitz  # PyMuPDF
 from docx import Document
 from dotenv import load_dotenv
 import os
+import time
+import pandas as pd
+import plotly.express as px
 
 load_dotenv()
 api_key = os.getenv('OPENAI_API_KEY')
@@ -216,6 +219,12 @@ def main():
 
         if st.button("Generate Interview Questions"):
             with st.spinner('Generating questions...'):
+                progress_bar = st.progress(0)
+
+                for percent_complete in range(100):
+                    time.sleep(0.05)
+                    progress_bar.progress(percent_complete + 1)
+
                 questions = generate_interview_questions(jd, cv, categories)
             st.subheader("Generated Interview Questions:")
             st.write(questions)
