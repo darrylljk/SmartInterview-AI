@@ -9,4 +9,7 @@ SmartInterview AI revolutionizes interview preparation by generating tailored, i
 - Enhance interview efficiency with comprehensive, AI-driven question sets.
 
 ## User Guide
+- < add points >
+
+## Gallery
 - < add pics >
