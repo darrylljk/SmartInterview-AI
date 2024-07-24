@@ -8,10 +8,7 @@
 - Enhance interview efficiency with comprehensive, AI-driven question sets.
 
 ## Tools
-- Python
-- Streamlit
-- LLM
-- NLP
+- Python (Streamlit, OpenAI LLM, NLP)
 
 ## User Guide
 - < add points >
