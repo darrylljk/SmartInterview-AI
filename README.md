@@ -8,6 +8,12 @@ SmartInterview AI revolutionizes interview preparation by generating tailored, i
 - Choose question types such as experience-based, situational, behavioral, technical, creative, and problem-solving.
 - Enhance interview efficiency with comprehensive, AI-driven question sets.
 
+## Tools
+- Python
+- Streamlit
+- LLM
+- NLP
+
 ## User Guide
 - < add points >
 
