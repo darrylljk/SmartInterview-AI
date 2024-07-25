@@ -9,9 +9,6 @@
 - Choose question types such as experience-based, situational, behavioral, technical, creative, and problem-solving.
 - Enhance interview efficiency with comprehensive, AI-driven question sets and suitability assessments.
 
-## Tools
-- Python (Streamlit, OpenAI LLM, NLP)
-
 ## Usage
 - Clone the repository.
 - Install the required dependencies.
