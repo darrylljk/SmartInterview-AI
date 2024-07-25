@@ -12,8 +12,16 @@
 ## Tools
 - Python (Streamlit, OpenAI LLM, NLP)
 
-## User Guide
-- < add points >
+## Usage
+- Clone the repository.
+- Install the required dependencies.
+- Set up your OpenAI API key:
+  - Create an account on OpenAI.
+  - Obtain your API key.
+  - Store the API key in a .env file with the following format: `OPENAI_API_KEY=your_openai_api_key`
+- Run the Streamlit app.
+- Upload JD and Candidate CV.
+Generate and download personalized interview questions with SmartInterview AI to find the perfect candidate! 🚀
 
 ## Gallery
 - < add pics >
