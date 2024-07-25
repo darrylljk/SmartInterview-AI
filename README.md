@@ -18,7 +18,7 @@
   - Store the API key in a .env file with the following format: `OPENAI_API_KEY=your_openai_api_key`
 - Run the Streamlit app.
 - Upload JD and Candidate CV.
-Generate and download personalized interview questions with SmartInterview AI to find the perfect candidate! 🚀
+- Generate and download personalized interview questions with SmartInterview AI to find the perfect candidate! 🚀
 
 ## Gallery
 - < add pics >
