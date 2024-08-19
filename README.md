@@ -1,5 +1,5 @@
 # SmartInterview AI 🚀
-<b>SmartInterview AI</b> revolutionizes interview preparation by <b>generating tailored, insightful interview questions</b> from uploaded job descriptions and candidate resumes. Designed for both interviewers and interviewees, this tool helps you dive deep into candidates' experiences, skills, and cultural fit, making your <b>interview process</b> more <b>effective</b> and <b>engaging</b>.
+SmartInterview AI revolutionizes interview preparation by generating tailored, insightful interview questions from uploaded job descriptions and candidate resumes. Designed for both interviewers and interviewees, this tool helps you dive deep into candidates' experiences, skills, and cultural fit, making your interview process more effective and engaging.
 
 Try it here: https://smartinterview-ai.streamlit.app/
 
