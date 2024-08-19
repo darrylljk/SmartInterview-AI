@@ -23,4 +23,4 @@ Try it here: https://smartinterview-ai.streamlit.app/
 - Generate and download personalized interview questions with SmartInterview AI to find the perfect candidate! 🚀
 
 ## Gallery
-- < add pics >
+![SmartInterview AI demo](https://github.com/user-attachments/assets/63ab58b7-5796-400e-8e54-9f19f27c696b)
