@@ -16,7 +16,7 @@ api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(
     api_key=api_key
 )
-model = "gpt-3.5-turbo"
+model = "gpt-4o-mini"
 
 def read_file(file):
     # Determine file type
